@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import StateTutorial from './routes/StateTutorial';
+import ReducerTutorial from './routes/ReducerTutorial';
+import EffectTutorial from './routes/EffectTutorial';
+import ContextTutorial from './routes/ContextTutorial';
+import RefTutorial from './routes/RefTutorial';
+import Routess from './Routess';
+import Navigation from './components/Navigation';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Navigation/> */}
+    <Routess/>
+    {props.abc}
+     {/* <StateTutorial/>
+     <ReducerTutorial/>
+     <EffectTutorial/>
+     <RefTutorial/>
+     <ContextTutorial/> */}
     </div>
   );
 }
